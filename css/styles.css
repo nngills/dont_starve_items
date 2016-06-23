@@ -1,0 +1,356 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: "Belisa Plumilla";
+	src: url(belisa_plumilla.ttf);
+}
+
+@font-face{
+	font-family: "Stint";
+	src: url(StintUltraCondensed-Regular.ttf);
+}
+
+body{
+	font-family: Stint;
+	background-image: url(../images/vanbg.png);
+}
+
+/*****-----HEADER------*****/
+header{
+	color: #fff;
+	background-color: #000;
+	font-family: "Belisa Plumilla";
+	padding: 5px;
+	overflow: auto;
+	margin-bottom: 25px;
+}
+
+header h1{
+	display: inline-block;
+	font-weight: 100;
+	margin-left: 10px;
+	margin-top: 4px;
+}
+
+/**--NAV--**/
+nav{
+	float: right;
+}
+
+nav li{
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}
+
+nav li:last-child{
+	margin-right: 3px;
+}
+
+nav button{
+	min-width: 60px;
+	color: #fff;
+	font-family: "Belisa Plumilla";
+	font-size: 1.7em;
+	padding: 7px 10px 4px 10px;
+	border: none;
+	background-image: url(../images/versionbg.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color:transparent;
+}
+
+/*****-----ASIDE-----*****/
+aside{
+	border-top: 10px;
+	border-right: 10px;
+	border-bottom: 10px;
+	border-left: 0px;
+	border-style: solid;
+	border-image: url(../images/navframe.png) 25;
+	float: left;
+}
+
+aside ul{
+	background-color: #2e2318;
+	list-style: none;
+	padding: 5px 5px 5px 0px;
+	margin: 0px;
+	overflow: auto;
+}
+
+aside a{
+	float: left;
+	clear: both;
+}
+
+aside li{
+	position: relative;
+	width: 45px;
+	height: 55px;
+	background-image: url(../images/tabbg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 1px;
+}
+
+aside img{
+	max-height: 50px;
+	max-width: 40px;
+	position: absolute;
+	top: 50%;
+    left: 45%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/*****-----MAIN-----*****/
+main{
+	width: 600px;
+	margin: 0px auto;
+	border-width: 40px;
+	border-style: solid;
+	border-image: url(../images/frame.png) 80;
+	color: #fff;
+	font-size: 1.2em;
+	margin-bottom: 70px;
+}
+
+main > div{ 
+	padding: 5px;
+	background-color: #2e2318;
+	min-height: 550px;
+}
+
+h2{
+	margin: 10px 0;
+	font-family: "Belisa Plumilla";
+	font-weight: 100;
+}
+
+main ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+main li{
+	display: inline;
+	margin-right: 2px;
+}
+
+main img{
+	background-image: url(../images/itembg.png);
+	background-size: contain;
+	padding: 2px;
+	width: 48px;
+}
+
+/****-----TOP-----****/
+#top{
+	clear: right;
+	position: relative;
+	/*
+	padding-top: 5px;
+	min-height: 235px;
+	visibility: hidden;
+	background-color: #2e2318;
+	border-bottom: dotted;
+	*/
+}
+
+#top section{
+	overflow: auto;
+}
+
+h3{
+	font-weight: 100;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Title*/
+#title{
+	float: left;
+}
+
+#top h2{
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	float: left;
+	clear: both;
+}
+
+#title > img{
+	float: left;
+	width: 98px;
+	position: relative;
+	z-index: 2;
+	margin-right: 25px;
+	margin-top: 55px;
+	clear: left;
+}
+
+/**---RECIPE---**/
+#recipe{
+	position: relative;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+#recipe h2{
+	margin: 0px;
+}
+
+#recipe #title img{
+	width: 64px; 
+}
+
+h3{
+	font-weight: 100;
+	font-size: 1.5em;
+	margin: 0px;
+}
+
+#msg{
+	font-size: 2.3em;
+	text-align: center;
+	height: 106px;
+}
+
+#msg p{
+	margin: 0px;
+}
+
+/**Materials**/
+#materials{
+	top: 15px;
+	left: 150px;
+	width: 120px;
+}
+
+#materials li{
+	margin-top: 22px;
+	float: left;
+}
+
+#materials li:nth-child(3), #materials li:nth-child(4){
+	margin-top: 0px;
+}
+
+.mat{
+	position: relative;
+	margin-bottom: -3px;
+}
+
+#materials span, #recipe_list ul span{
+	font-size: 1.4em;
+	position: absolute;
+	width: 52px;
+	text-align: center;
+}
+
+#materials a, #recipe_list a{
+	color: #fff;
+}
+
+/*Info*/
+#info{
+	float: left;
+	position: absolute;
+	left: 250px;
+	top: 0px;
+	width: 210px;
+}
+
+#info p{
+	font-size: 1.2em;
+}
+
+#info ul{
+	margin-left: 20px;
+}
+
+/*Values*/
+#values{
+	position: absolute;
+	left: 420px;
+	top: 0px;
+	width: 200px;
+}
+
+#values img{
+	background-image: none;
+	width: 48px;
+	padding: 0px;
+}
+
+#values ul{
+	position: relative;
+	left: 65px;
+	bottom: 34px;
+	width: 100px;
+	margin: 0px;
+}
+
+#values li{
+	font-size: 1.5em;
+	line-height: 0px;
+	display: block;
+}
+
+#values li span:nth-child(2){
+	margin-top: 28px;
+	position: absolute
+}
+
+#values li span:last-child{
+	position: relative;
+	bottom: 13px;
+}
+
+/**SEARCH BAR**/
+input{
+	margin-top: 20px;
+	background-color: #8e7b5a;
+	background-clip: padding-box;
+	border: 10px solid;
+	width: calc(100% - 40px);
+	padding: 0px 5px;
+	font-size: 1.2em;
+	border-image: url(../images/searchbar.png) 28;
+	color: #fff;
+	font-family: Stint;
+}
+
+/**ITEM LIST FIXES**/
+
+#itemlist ul img{
+	cursor: pointer;
+}
+
+#Light h2, #Survival h2{
+	padding-left: 40px!important;
+}
+
+#Refine h2, #Magic h2{
+	padding-left: 60px!important;
+}
+
+/***OUTLINE FIX*/
+.outline{
+	position: relative;
+	z-index: 10;
+}
